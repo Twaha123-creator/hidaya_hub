@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    /*background-color: #CC0066;*/
+    margin: 0;
+    background-image: url("book_photo_home.jpg");
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+#searchBar {
+    width: 80%;
+    padding: 0.5rem;
+    margin-top: 1rem;
+}
+
+.home-button  {
+    text-decoration: none;
+    color: white;
+    margin-left: 15px;
+    display: inline-block;
+    float: left;
+}
+
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+}
+.book-list a{
+    text-decoration: none;
+}
+
+ a:hover {
+    color: red; /* Color when hovered */           
+}
+
+.book-item {
+    background-color: #fff;
+    border: 5px solid #ddd;
+    border-radius: 13px;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    width: 130px;
+    transition: transform 0.4s;
+    border-color: gold;
+}
+
+.book-item img {
+    width: 90%;
+    height: auto;
+}
+
+.book-item h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.book-item p {
+    color: #555;
+    font-size: 0.9em;
+    margin: 0 0 10px;
+}
+
+.book-item:hover {
+    transform: scale(1.05);
+}
+
+/*a {
+    text-decoration: none;
+    color: blue;
+}*/
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            /*position: fixed;*/
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .social-icons {
+            margin-top: 10px;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            color: white;
+            font-size: 20px;
+        }
