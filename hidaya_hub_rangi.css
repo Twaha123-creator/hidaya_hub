@@ -2,6 +2,16 @@
             font-family: Arial, sans-serif;
             margin: 0;
         }
+
+        .containe {
+               flex-direction: row;
+        }
+        @media (max-width: 600px) {
+               .container{
+                      flex-direction: colum;
+               }
+        }
+
         .navbar {
             display: flex;
             justify-content: space-between;
@@ -111,73 +121,4 @@
             height: 250px; /* Set your desired height */
             margin: 5px;
             animation: slide 3s ease-in-out infinite alternate;
-        }
-
-
-        /*.footer .social-icons {
-            list-style: none;
-            padding: 0;
-        }
-        .footer .social-icons li {
-            display: inline;
-            margin: 0 10px;
-        }
-        .footer .social-icons a {
-            color: white;
-            text-decoration: none;
-            font-size: 30px;
-        }
-        .footer .social-icons a:hover {
-            color: #ddd;
-        }
-
-        .content {
-            min-height: 100vh;
-            padding-bottom: 100px;  Height of the footer 
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-        .footer-container {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .footer-column {
-            flex: 1;
-            margin: 10px;
-            min-width: 200px;
-        }
-        .footer-column h3 {
-            border-bottom: 2px solid #555;
-            padding-bottom: 10px;
-            margin-bottom: 10px;
-        }
-        .footer-column ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .footer-column ul li {
-            margin: 5px 0;
-        }
-        .footer-column ul li a {
-            color: white;
-            text-decoration: none;
-        }
-        .footer-column ul li a:hover {
-            text-decoration: underline;
-        }
-        .footer-bottom {
-            margin-top: 20px;
-            border-top: 1px solid #555;
-            padding-top: 10px;
         }
