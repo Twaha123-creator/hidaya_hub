@@ -1,4 +1,81 @@
-       body {
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "aside"
+        "footer";
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.header {
+    grid-area: header;
+    background-color: #4CAF50;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.nav {
+    grid-area: nav;
+    background-color: #2196F3;
+    padding: 15px;
+    color: white;
+}
+
+.main {
+    grid-area: main;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+.aside {
+    grid-area: aside;
+    background-color: #ff9800;
+    padding: 15px;
+    color: white;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #555;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+@media (min-width: 600px) {
+    body {
+        grid-template-areas:
+            "header header"
+            "nav main"
+            "aside main"
+            "footer footer";
+        grid-template-columns: 1fr 3fr;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        grid-template-areas:
+            "header header header"
+            "nav main aside"
+            "footer footer footer";
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+}
+
+/*body {
             font-family: Arial, sans-serif;
             margin: 0;
         }
@@ -29,7 +106,7 @@ img {
     max-width: 100%;
     height: auto;
 }
-        .navbar {
+        /*.navbar {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -49,13 +126,13 @@ img {
             color: black;
         }
 
-        .navbar .menu {
+        /*.navbar .menu {
             display: flex;
             font-size: 19px;
             margin-left: 20px;
         }
         .navbar .menu .dropdown {
-            position: relative;
+            /*position: relative;
         }
         .navbar .menu .dropdown-content {
             display: none;
@@ -107,7 +184,7 @@ img {
             text-align: center;
             padding: 20px 0;
             /*position: fixed;  hii position hapa niya kuweka kama unataka footer yako 
-            isiendi juu nakubakia huko huko ukiweka hii basi itabakia juu*/
+            isiendi juu nakubakia huko huko ukiweka hii basi itabakia juu
             bottom: 0;
             width: 100%;
         }
@@ -134,8 +211,8 @@ img {
         }
 
         .animated-image {
-            width: 300px; /* Set your desired width */
-            height: 100px; /* Set your desired height */
+            width: 300px; /* Set your desired width 
+            height: 100px; /* Set your desired height 
             margin: 5px;
             animation: slide 3s ease-in-out infinite alternate;
-        }
+        }*/
