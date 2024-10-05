@@ -134,8 +134,8 @@ img {
         }
 
         .animated-image {
-            width: 800px; /* Set your desired width */
-            height: 250px; /* Set your desired height */
+            width: 300px; /* Set your desired width */
+            height: 100px; /* Set your desired height */
             margin: 5px;
             animation: slide 3s ease-in-out infinite alternate;
         }
